@@ -1,0 +1,17 @@
+#contact {
+    text-align: center; /* Centers the text and link */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding if needed */
+  }
+  
+  #contact p {
+    margin-bottom: 20px; /* Adds space below the paragraph */
+  }
+  
+  #contact a {
+    display: inline-flex; /* Ensures the link and icon are aligned properly */
+    align-items: center; /* Centers the icon and text vertically */
+    text-decoration: none; /* Removes the underline from the link */
+    color: inherit; /* Inherits the text color from parent */
+  }
+  

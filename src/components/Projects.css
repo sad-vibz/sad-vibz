@@ -1,0 +1,19 @@
+.projects-container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease-out; /* Smooth transition */
+  }
+  
+  .projects-container.active {
+    transform: translateY(0); /* Adjust based on your layout */
+  }
+  
+  #projects {
+    border: none; /* Remove any borders */
+    outline: none; /* Remove any outline */
+    box-shadow: none; /* Remove any shadow */
+    background: transparent; /* Ensure no background color is applied */
+  }
+  
+  

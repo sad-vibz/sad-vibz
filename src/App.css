@@ -1,0 +1,150 @@
+/* Header Section Styling with Background Image */
+.App-header {
+  background: url('./background.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(37, 112, 159);
+  padding-top: calc(100vh * 1 / 7); /* 1/7th from the top for good spacing */
+  box-sizing: border-box;
+}
+
+/* Keyframes for the moving wave effect */
+@keyframes waveAnimation {
+  0% {
+    background-position: 25% 0%;
+  }
+  50% {
+    background-position: 60% 50%;
+  }
+  100% {
+    background-position: 25% 100%;
+  }
+}
+
+/* Styling for the header title with moving wave gradient */
+/* Styling for the header title with moving wave gradient */
+.header-title {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #b1ff62, #589fcf, #34abd3);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: waveAnimation 10s linear infinite;
+  transition: text-shadow 0.3s ease;
+}
+
+/* Glow effect on hover */
+.header-title:hover {
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.5),  /* Inner glow */
+    0 0 10px rgba(255, 255, 255, 0.4), /* Slightly wider glow */
+    0 0 15px rgba(255, 255, 255, 0.3), /* Edge glow */
+    0 0 20px rgba(255, 255, 255, 0.2); /* Faintest glow around edge */
+}
+
+
+/* Title and Header Text */
+h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+/* Navigation Styling */
+nav {
+  margin-top: 90px; /* Add space between the title and navigation */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  gap: 60px;
+  justify-content: center; /* Center the navigation horizontally */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem; /* Increase font size for navigation items */
+  padding: 20px 45px;
+  border-radius: 5px;
+  background-color: #20232a;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #61dafb;
+  color: #20232a;
+  box-shadow: 0 0 15px 5px rgba(40, 116, 138, 0.7);
+}
+
+/* Main Content Styling with Light Overlay for Readability */
+main {
+  padding: 40px;
+  min-height: 80vh;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter overlay */
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto; /* Center the main content */
+  max-width: 1200px; /* Set a max-width to keep content narrow on wide screens */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  main {
+    padding: 30px;
+    margin: 15px;
+    border-radius: 8px;
+  }
+}
