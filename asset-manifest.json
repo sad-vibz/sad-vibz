@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sad-vibz/static/css/main.fa007b1a.css",
+    "main.css": "/sad-vibz/static/css/main.b93708b9.css",
     "main.js": "/sad-vibz/static/js/main.5b4c00f8.js",
     "static/media/background.jpg": "/sad-vibz/static/media/background.120f1d217ba0cf5ce964.jpg",
     "index.html": "/sad-vibz/index.html",
-    "main.fa007b1a.css.map": "/sad-vibz/static/css/main.fa007b1a.css.map",
+    "main.b93708b9.css.map": "/sad-vibz/static/css/main.b93708b9.css.map",
     "main.5b4c00f8.js.map": "/sad-vibz/static/js/main.5b4c00f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa007b1a.css",
+    "static/css/main.b93708b9.css",
     "static/js/main.5b4c00f8.js"
   ]
 }
