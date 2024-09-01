@@ -12,6 +12,10 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
+          <video className="background-video" autoPlay muted loop>
+            <source src="./background-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <h1 className="header-title">
             {Array.from('Welcome to My Portfolio').map((char, index) => (
               <span key={index}>{char}</span>
